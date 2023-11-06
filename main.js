@@ -31,6 +31,8 @@ else if (age >= 65) {
   ticketPrice *= (1 - discount);
 }
 
+// mostriamo lo sconto in console
+console.log('Lo sconto a cui hai diritto è', discount * 100, '%');
 // salviamo il prezzo finale del biglietto in una variabile e mostriamolo sulla console
 let finalTicketPrice = (Math.round(ticketPrice * 100) / 100).toFixed(2);
 console.log('Il prezzo finale del biglietto è', finalTicketPrice, '€');
