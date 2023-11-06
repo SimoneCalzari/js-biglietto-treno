@@ -1,7 +1,7 @@
 'use strict';
 
 // km del viaggio input user e salviamolo in una costante
-const kilometers = parseInt(prompt('Inserisci la lunghezza del viaggio in km'));
+const kilometers = parseFloat(prompt('Inserisci la lunghezza del viaggio in km'));
 console.log('La tratta ha una lunghezza di', kilometers, 'km');
 
 // età del passeggero input user e salviamola in una costante
@@ -33,6 +33,7 @@ else if (age >= 65) {
 
 // mostriamo lo sconto in console
 console.log('Lo sconto a cui hai diritto è', discount * 100, '%');
+
 // salviamo il prezzo finale del biglietto in una variabile e mostriamolo sulla console
 let finalTicketPrice = (Math.round(ticketPrice * 100) / 100).toFixed(2);
 console.log('Il prezzo finale del biglietto è', finalTicketPrice, '€');
